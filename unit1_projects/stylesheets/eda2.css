@@ -1,0 +1,53 @@
+header {background-color: black; 
+    color: white;
+    text-align:center;
+    }
+
+.caption {float:left;
+    text-align:center;
+    padding-right:100px;
+    color:blue;
+}
+.caption {position:relative;
+}
+
+div.caption p{position:relative;
+bottom:200px;
+color:yellow;
+font-size:20px;
+}
+
+a:hover {
+    color:yellow;
+}
+
+
+h2 {text-align:center;}
+.band {
+    float:left;
+    height:350px;
+    margin:5px;
+    padding: 30px;
+    border:solid;
+    width:70%;
+    }
+    
+#pinkfloyd {
+    background-color:pink;
+}
+#direstraits {
+    background-color:red;
+}
+#bobmarley {background-color:green;}
+aside {
+    margin-left:75%;
+	border:dashed;
+	position: fixed;
+	float: right;
+	width:200px;
+	background-color: #B9D7D9
+	}
+footer {float:left;
+        width:100%;
+        text-align:right;
+}
