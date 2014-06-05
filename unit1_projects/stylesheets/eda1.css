@@ -1,0 +1,11 @@
+
+body {background-color: #99CCFF}
+div {border-style:solid;
+    border-color:orange;}
+
+div:nth-child(even) {background-color:#008A00;}
+div:nth-child(odd) {background-color:#008A95;}
+strong {color:red;}
+ol {font-family: "Courier New";}
+.bold {color:yellow;}
+#third_para {background-color:green;}
