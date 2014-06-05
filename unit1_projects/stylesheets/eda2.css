@@ -1,9 +1,15 @@
-header {background-color: black; 
+img {
+	max-width: 100%;
+	border: 0;
+}
+header {
+	background-color: black; 
     color: white;
     text-align:center;
-    }
+}
 
-.caption {float:left;
+.caption {
+	float:left;
     text-align:center;
     padding-right:100px;
     color:blue;
