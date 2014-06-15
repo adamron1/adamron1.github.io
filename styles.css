@@ -45,11 +45,11 @@ section {
 
 }
 
-.sidebars {
+#index {
     margin:0 30px;
     width: 270px;
     display:inline-block;
-    float:right;
+    float:left;
 }
 .sidebar {
     text-align:center;

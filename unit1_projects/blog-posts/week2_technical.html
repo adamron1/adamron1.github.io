@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta charset=”utf-8”>
+<html lang ="en">
+<link type="text/css" rel="stylesheet" href="/unit1_projects/stylesheets/blog_template.css"/>
+
+<head>
+	<title>Technical Blog 1</title>
+</head>
+
+<body id "top">
+	<header>
+		<h1>Adam's Technical Blog: Week 1 </h1>
+		<h4>Your guide for everything Adam's thinking</h4>
+	</header>
+
+	<aside>
+		<p><a href ="#blog1">Good Websites: an Analysis</a></p>
+		</aside>
+
+	<article ="blog" id ="blog1">
+		<h2>Padding, borders, margins? What's going on?</h2>
+		<p>Learning the difference between these is not overly hard, although it may seem a bit funky at first. <br> Let's imagine we have something to write, we'll have to put in a paragraph. This is really the same for all elements, as they all have a 2 dimensional box shape.</p>
+		<img src="/unit1_projects/images/pic1.png"/>
+		<p>Ok, so now we have some words. So what? It doesn't look cool. I say we should add a border</p>
+		<img src="/unit1_projects/images/pic2.png"/>
+		<p>Ok, so that's what a border is. Nice, but it's ugly! If only it were further away from the words, it would look way better. Let's put some <em>PADDING </em> on it</p>
+		<img src="/unit1_projects/images/pic3.png"/>
+		<p>So, now you can see what padding is. It's the distance between the content of the element and the border. The border marks the outer boundries of the element, and everything outside of it is another element entirely.<br>Let's put another element in there. I like text, so that will do. </p>
+		<img src="/unit1_projects/images/pic4.png"/>
+		<p><strong>WOAH</strong>! That's fine and all, but the new element is basically touching my shiney new border. We can't have that! We'll have to add a margin</p>
+		<img src="/unit1_projects/images/pic5.png"/>
+		<p>Good! Now nothing's getting near my first element. So there you have it: </p>
+			<ul>
+				<li>The <strong>border</strong> marks the outer boundary of the element. </li>
+				<li>The <strong>padding</strong> marks an inner boundary, between the border and the contents of the element. In this example, it was the text inside a box-shaped element </li>
+				<li>And finally the <strong>margin</strong> extends beyond the boundary(/border) of the element. This is used to make space between elements, and is invisible.</li>
+			</ul>
+		<p>Now that we've clarified that, let's put another complete element, complete with these fancy margins and padding</p>
+		<img src="/unit1_projects/images/pic6.png"/>
+
+		<p>To summarise, here's a picture that shows you what's what</p>
+		<img src="http://www.w3.org/TR/CSS2/images/boxdim.png">
+	</article>
+	
+	<div class ="separator">
+		<p>"Posted by <a href="mailto:adamron1@hotmail.com"> Adam Ron</a> on 15th June, 2014</p>
+	</div>
+
+
+</body>
+	
+<footer>
+	<div class="foot" id="footleft">
+		<a href="/index.html">Back to index</a>
+	</div>
+
+	<div class="foot" id="footmid">
+		<h6>This was a Web page brought to you by me</h6>
+	
+	</div>
+	<div class="foot" id="footright">
+		<a href="#top">Back to top</a>
+	</div>
+	
+</footer>
+
+</html>

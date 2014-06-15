@@ -41,9 +41,7 @@ article {
     margin-top:10px;
     margin-left:5%;
 }
-article img {
-    width: 68%;
-}
+
 .separator {
     text-align:right;
     padding-right:2%;
