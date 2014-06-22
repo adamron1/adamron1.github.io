@@ -1,5 +1,5 @@
 body {
-    font-size: 16px;
+    font-size: 20px;
     background-image: url("http://hdwallimg.com/wp-content/uploads/2014/03/Black-Blue-Keyboard-Computer-Wallpaper-HD.jpg");
 	background-color: #F1F1F1;
 }
@@ -121,8 +121,12 @@ a {
 #index h4 a {
     color:black
 }
+
 a:hover {
     color:red;
+}
+#index h4 a:hover {
+    color:blueviolet;
 }
 a.hide {display:none;}
 a.show:focus {display:none;}
