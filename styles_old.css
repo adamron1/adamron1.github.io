@@ -1,0 +1,155 @@
+body {
+    background-color: #5CD17B;
+}
+a {
+    color: #035218
+}
+
+header {
+    background-color: #1FB747;
+    color: 035218;
+    text-align: center;
+    border:solid 
+}
+header h1{
+    font-family: 'sans-serif';
+    font-size: 2.5em
+}
+
+header h1:before{
+    content:''
+}
+header h1:after{
+    content: ''
+}
+
+nav {
+    border:solid;
+    background-color: #035218
+}
+
+nav a{
+    color: #5CD17B
+}
+nav li {
+    display: inline;
+}
+nav li::before{
+    content:'#';
+}
+nav li::after{
+    content:'#';
+}
+section {
+    background-color: #5CD17B;
+
+}
+
+#index {
+    margin:0 30px;
+    width: 270px;
+    display:inline-block;
+    float:left;
+}
+.sidebar {
+    text-align:center;
+    border:solid;
+    background-color: #93C941;
+    width:270px;
+    display: block;
+    margin-top:50px;
+}
+
+article {
+    float:left;
+    background-color:#CBFFD8;
+    width: 700px;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+        
+}
+article img {
+    width: 600px;
+}
+
+#blogs h4:before {
+    content: '';
+}
+
+#misc h4:before {
+    content: '';
+}
+footer{
+    float: left;
+    width: 100%;
+    background-color: #035218;
+    padding: 20px;
+    height: 30px
+    
+}
+footer p {
+    text-align: right;
+    margin-right:10px;
+}
+
+footer h6 {
+    text-align: left;
+    display:inline;
+}
+
+footer a {
+    color:5CD17B;
+}
+
+
+@media screen and (max-width:1160px){
+    #index {
+        float:left;
+        width: 100%;
+        display:inline-block;
+        float: left;
+        margin:5%;
+        margin-bottom: 0;
+        margin-top: 0
+    }
+    .sidebar {
+        width: 42%;
+        display:inline-block;
+        position:relative;
+    }
+    article {
+        width:90%;
+        margin-left:2%;
+        margin-right:5%;
+        margin-top:5px;
+        margin-bottom:5px
+
+        }
+    article img{
+        width:90%
+    }
+header {margin-bottom:-30px}
+}
+@media screen and (max-width:720px){
+    body {
+        font-size: 14px;
+    }
+    .sidebar {
+
+            }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
