@@ -4,28 +4,44 @@
 <link type="text/css" rel="stylesheet" href="/unit1_projects/stylesheets/blog_template.css"/>
 
 <head>
-	<title>Technical Blog 3</title>
+	<title>Technical Blog 4</title>
 </head>
 
 <body id "top">
 	<header>
-		<h1>Adam's Technical Blog: Week 3</h1>
+		<h1>Adam's Technical Blog: Week 4</h1>
 		<h4>Your guide for everything Adam's thinking</h4>
 	</header>
 
 	<article>
-		<h2>Javascript</h2>
-		<p>This week we've been learning about Javascript. It's been very different to the design and UX focus that we've had before, so at first it's easy to miss why we should learn it. In this article I'll attempt to explain why Javascript is so widely used, what sets it apart from the rest, and also why it's not the best in some things.</p>
-		<img src="http://inspiredtalents.com/wp-content/uploads/2012/08/javascript.png">
-		<h3>Why is Javascript so popular?</h3>
-		<p>JS is a scripting language, which essentially means that you (the user of a program) only get a bunch of text, and a javascript file is really very little more than this. Your browser or whatever interpreter you use (for example node) then parses the instructions from it, meaning that it is a front end language that uses the user's computer, and does not rely on the computing power of a server somewhere. This is generally a good thing, as when you work more with back-end stuff you don't want everything to come from a server- many hands make lighter work. It also runs very quickly for a scripting language, which is an advantage it has over many other scripting languages, such as python.</p>
-		<img src="http://www.tonymarston.net/php-mysql/front-end-back-end.png">
-		<p>Apart from this, JS is quite friendly to those who code. It has a hugely extensive library, and more people out there know javascript than pretty much anything else. It's not going, away by the looks of things. This comes with a lot of good support, so if you're stuck on anything you can be guaranteed that the solution's out there, a google search away. With all this comes the fact that it's not THAT complicated as far as languages go (or so I'm told). </p>
-		<p>It's not all roses though. JS finds itself under quite a lot of scrutiny. Despite being pretty good at what it does, it's not perfect. In fact, prbably the main reason it is so popular is not because it's amazing; rather that it's popularity has reached a critical mass- it's all over the internet, supported by virtually all browsers on virually all platforms. The main technical problems people have with JS are quite specific and usually semantic. For example, it is apparently not good with bitwise operators. However, that's something I struggle to understand, so it's not quite fair for me to judge it too much on that point. </p>
+		<h2>Loops in Ruby</h2>
+		<img src="http://1.bp.blogspot.com/-RB8xTkXubgk/Ut2pjQOAFRI/AAAAAAAACiw/pxRO2YRFL_0/s1600/in.png">
+		<p>Loops are great. They're the reason computers can do all sorts of complex and computing equations that would take normal humans a very long time to come up with. And because computers are so good at performing equations, it makes sense to use them to search, to sort data, to add stuff to other stuff, and what have you. Generally in computer science there are 2 main kinds of looping conventions - a 'for' loop and a 'while' loop. In this blog, I'll cover these, and go into a brief discussion on some of Ruby's simplified methods which make looping more accessable for many people.</p>
+		<h3>The 'while' loop</h3>
+		<p>The while loop works as it sounds. While a condition is met (true), the following formula keeps going and making its appropriate calulations. This is useful in instances where we don't have a definite limit on how many loops we want to go through. For example</p>
+		<p><strong>while x < y {x++} </strong></p>
+		<p>This loop is relatively simple- it means that the loop will not stop until x is matching or a higher value than y. AND we can keep iterating however many times neccessary until the condition is met. The problem many people face with this however, is that it is easy to get yourself into an infinite loop- which your computer will no appreciate that much! To avoid this, look carefully at your conditional statement, and make sure that the condition will eventually be met!</p>
+		<h3>The 'until' Loop</h3>
+		<p>This is another way to phrase a 'while' loop- just the reverse. It will continue looping <em>until</em> the stated condition is true- whereas with a while loop it is waiting for the condition to prove false. There are very few instances where you really need this as opposed to a 'while', but if it helps you understand, power to you.</p>
+		<strong><p>until x > y {x++}</strong> </p>
+		<h3>The 'for' loop</h3>
+		<p>This is the other major looping method aside from 'while'. This loops through a specified range and iterates ONLY within this range. This means you avoid the trappings of accidently falling into an infinite loop (you can still do it though). This is particularly useful when you apply it to data sets, such as arrays, hashes or strings.</p>
+		<p><strong>for i in [1,2,3] {print i} #=>123</strong></p>
+		<p>As demonstrated above, this will go througfh each item in an object(in this case an array) starting at the first instance '[0]'. This is easy enough to use, but can get quite clunky when dealing with datasets with an unknown quantity of data. Also, rubyists don't really use it much because there are more eloquent ways (thanks to some syntactic sugar) to do essentially the same thing.</p>
+		<h3>The .each Method</h3>
+		<p>So, this is the most common way to flip through each item in a dataset. As suggested in the name, it goes through 'each item'. The nice thing about this is that you can put a loop eloquently into a single line.</p>
+		<p><strong>[1,2,3].each {|x| puts x}</strong> #=>123</p>
+		<p>As shown above, this loop runs through each element in the array and performs the subsequent operation. 'x' represents the content of the each iteration, as opposed to the index. This is pretty nice in this situation, but in others it may no quite suit your needs- you may prefer to have an <strong>index</strong> to refer to rather than what is contained inside the array. For that though, it might be useful to use the next type of loop</p>
+		<h3>The .times Method</h3>
+		<p>This is another 'for' spinoff that covers a specified range, but this time you specify EXACTLY how many loops you want to do.</p>
+		<p><strong>[1,2,3].length.times {|x| print x}</strong> #=>012</p>
+		<p>See? It's a little bit different than the each method. Here, 'x' referred to the index - ie the placeholder of each item in the array that the loop went through. Also, we know that the loop only went through 3 times, since the [1,2,3].length is 3. That's it - no infinite loops here!</p>
+		<p>I hope this has been useful to you, and that it is true!</p>
+
 	</article>
 	
 	<div class ="separator">
-		<p>"Posted by <a href="mailto:adamron1@hotmail.com"> Adam Ron</a> on 22nd June, 2014</p>
+		<p>"Posted by <a href="mailto:adamron1@hotmail.com"> Adam Ron</a> on 29th June, 2014</p>
 	</div>
 
 
