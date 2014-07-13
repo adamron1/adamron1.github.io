@@ -73,3 +73,10 @@ footer {
     display:inline-block;
     text-align:right;
 }
+#code { 
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    background: white;
+    color: black;
+}
