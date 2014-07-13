@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<meta charset=”utf-8”>
+<html lang ="en">
+<link type="text/css" rel="stylesheet" href="/unit1_projects/stylesheets/blog_template.css"/>
+
+<head>
+	<title>Technical Blog 6</title>
+</head>
+
+<body id "top">
+	<header>
+		<h1>Adam's Technical Blog: Week 6</h1>
+		<h4>Your guide for everything Adam's thinking</h4>
+	</header>
+
+	<article>
+		<h2>Blocs, Procs and Lambdas</h2>
+		<p>In this week's technical blog, I shall attempt to explain the difference between blocs, procs and lambdas in ruby. While these are similar, they have subtle diferrences which make programming in ruby quite effective and user friendly.</p>
+		<h3>Blocs</h3>
+		<p>Blocs are lines of code which you put in place to perform operations at a certain place in the program. That sounds vague, but that's because they are. When we call an #each or #collect method that goes through an ennumerable, we run each item in the loop through the bloc, which you can use to alter or extract information, or call some kind of operation. There are 2 broad ways of using blocs with ruby syntax, one being a in a single line:</p>
+		<div id = "code">
+			<p>[1,2,3].each <strong>{|x| puts x }</strong></p>
+		</div>
+		<p>In this example we simply put a 'puts' method on each item in the array. This operation occurred inside the squiggly brackets, which defines the bloc. The other way we do it is:</p>
+		<div id = "code">
+			<p>[1,2,3].each <strong> do |x| 
+				<br>  puts x
+				<br>end</strong></p>
+		</div>
+		<p>This above example was the exact same operation, with a slightly different presenation. Here, the <strong>do</strong> keyword defines the start of the block, and ends with <strong>end</strong>.</p>
+		<p>We use blocs in places where we need to break things down in a specific fashion. In this example, it was fairly obvious what our bloc was doing- it was not comnplex and it didn't need to be repeated. Blocs are also used in conjuction with 'yield' operations - a function or method that yields at a certain position can expect a bloc (which you specify) to perform a certain operation within the function/method.</p>
+
+		<h3>Procs</h3>
+		<p>Without getting too complicated, blocs are technically a sub-group of procs. Let's just say that a proc (short for procedure) is a way of storing a chunk of code- the same as a bloc, but you can store it as an object. Confused? Well, let's just illustrate a simple proc:</p>
+		<div id="code">
+			<p>multiples_of_3 = Proc.new do |n| </p>
+			<p>  n % 3 == 0</p>
+			<p>end</p>
+			<p>(1..30).to_a.select(&multiples_of_3)</p>
+			<p>#=> [3, 6, 9, 12, 15, 18, 21, 24, 27, 30] </p>
+		</div>
+		<p>In this example, we've basically a proc, which is similar to how we'd run a bloc. However, we've managed to store this in a way that's easier to call when we need it on the fourth line. To call it simply requires an ampersand (&) and the name of the proc in parentheses. This is useful when we have bloc type operations that we use again and again - ruby stores the operation in a nice place to get called on whenever it's needed. This helps keep code DRY.</p>
+		<h3>Lambdas</h3>
+		<p>Ahh, the most confusing of them all. Lambdas are, for the most part, identical to procs. They are objects, and the syntax to call them is essentially the same. We define them slightly differently however, and there are some quirks that make them a little bit different from procs.</p>
+		<p>Firstly, lambdas check the number of arguments passed to them (whereas procs do not), and if this is inconsistent with the data it's running with, a lambda will throw an error. Secondly, a lambda will not stop at the same point that a bloc or proc will- it goes all the way through the code to get to the end of an operation. Here's an example:</p>
+		<div id="code">
+			<p>def batman_ironman_proc</p>
+			<p>  victor = Proc.new { return "Batman will win!" }</p>
+			<p>  victor.call</p>
+			<p>  "Iron Man will win!"</p>
+			<p>end</p>
+			<p>puts batman_ironman_proc</p>
+			<p>#=> "Batman will win!"</p>
+
+			<p>def batman_ironman_lambda</p>
+			<p>  victor = lambda { return "Batman will win!" }</p>
+			<p>  victor.call</p>
+			<p>  "Iron Man will win!"</p>
+			<p>end</p>
+			<p>#=> "Iron Man will win!"</p>
+		</div>
+		<p>In the example above, the lambda and proc were pretty much identical. The difference however, is that the lambda passes through the 'return' command, which would normally stop a block at that point.<br></p>
+		<p>So concludes today's wonderful lesson on ruby things. I hope whoever sees this finds it valuable, and also that I got everything right!</p>
+	</article>
+	
+	<div class ="separator">
+		<p>"Posted by <a href="mailto:adamron1@hotmail.com"> Adam Ron</a> on 13th July, 2014</p>
+	</div>
+
+
+</body>
+	
+<footer>
+	<div class="foot" id="footleft">
+		<a href="/index.html">Back to index</a>
+	</div>
+
+	<div class="foot" id="footmid">
+		<h6>This was a Web page brought to you by me</h6>
+	
+	</div>
+	<div class="foot" id="footright">
+		<a href="#top">Back to top</a>
+	</div>
+	
+</footer>
+
+</html>
